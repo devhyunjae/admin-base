@@ -1,9 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import ChannelService from './ChannelService'
 
 function App() {
   const [count, setCount] = useState(0)
+  useEffect(() => {
+    ChannelService.boot({
+      "pluginKey": "dee42bed-b43c-4681-90a7-026ed54c41b5", //please fill with your plugin key
+      "memberId": "1",
+      "profile": {
+        "name": "helo",
+        "email": "asdf@adf.net", 
+        "id": "1"
+      }
+    });
+  })
 
   return (
     <div className="App">
