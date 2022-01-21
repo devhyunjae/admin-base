@@ -8,12 +8,6 @@ function App() {
   useEffect(() => {
     ChannelService.boot({
       "pluginKey": "dee42bed-b43c-4681-90a7-026ed54c41b5", //please fill with your plugin key
-      "memberId": "1",
-      "profile": {
-        "name": "helo",
-        "email": "asdf@adf.net", 
-        "id": "1"
-      }
     });
   }, [])
 
